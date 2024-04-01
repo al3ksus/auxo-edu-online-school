@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online-school</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>    
+    <div id="wrapper">
+        <header>
+            <div>
+                <a href="">Меню</a>
+            </div>
+            <div id="title">
+                <a href="/"><strong>Online-school</strong></a>
+            </div>
+            <div>
+                <div href="" id="interesting-directions-list-opener">Личный кабинет</div>
+            </div>
+        </header>
+        <div id="school-wrapper">
+            <div id="interesting-directions">
+                <div id="interesting-directions-header"><b>Интересующие направления: 0</b></div>
+            </div>
+            <div>
+                <div id="school-menu">
+                    <a href="/" id="school-logo">
+                        <img src="https://cdn-icons-png.freepik.com/256/3404/3404725.png?ga=GA1.1.381131341.1708775887&">
+                    </a>
+                    <div id="text-fill-form">
+                        <strong>Заполните зявку:</strong>
+                    </div>
+                    <div id="form">
+                        <div>
+                            <input type="text" name="name" id="name-field" placeholder="Имя" class="form-field">
+                        </div>
+                        <div>
+                            <input type="email" name="email" id="email-field" placeholder="Email" class="form-field">
+                        </div>
+                        <div>
+                            <input type="tel" name="tel" id="tel-field" placeholder="Телефон" class="form-field">
+                        </div>
+                        <div>
+                            <select name="direction" id="direction-selector">
+                                <option value disabled selected>Направление</option>
+                                <option value="Physico-mathematical">Физико-математическое</option>
+                                <option value="Socio-economic">Социально-экономическое</option>
+                                <option value="Applied Informatics">Прикладная информатика</option>
+                                <option value="Chemical and Biological">Химико-биологическое</option>
+                                <option value="Linguistic">Лингвистическое</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div>
+                        <button name="apply-button" id="apply-button">Отправить</button>
+                    </div>
+                </div>
+                <div id="direction-filters">
+                    <strong>Фильтры:</strong>
+                    <div id="subj-list-opener", class="filter-option">
+                        <div class="arrow"><span>&#9660</span></div>
+                        <div><span>Предметы</span></div>
+                    </div>
+                    <div id="subj-list" class="input-list">
+                        <div>
+                            <input type="checkbox" name="rus-lang-subj-checkbox" id="rus-lang-subj-checkbox" class="subj-checkbox" value="rus-lang">
+                            <label for="rus-lang-subj-checkbox">Русский язык</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="math-subj-checkbox" id="math-subj-checkbox" class="subj-checkbox" value="math">
+                            <label for="math-subj-checkbox">Математика</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="phys-subj-checkbox" id="phys-subj-checkbox" class="subj-checkbox" value="physics">
+                            <label for="phys-subj-checkbox">Физика</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="inf-subj-checkbox" id="inf-subj-checkbox" class="subj-checkbox" value="informatics">
+                            <label for="inf-subj-checkbox">Информатика</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="eng-lang-subj-checkbox" id="eng-lang-subj-checkbox" class="subj-checkbox" value="eng-lang">
+                            <label for="eng-lang-subj-checkbox">Английский язык</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="social-subj-checkbox" id="social-subj-checkbox" class="subj-checkbox" value="social">
+                            <label for="social-subj-checkbox">Обществознание</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="economy-subj-checkbox" id="economy-subj-checkbox" class="subj-checkbox" value="economy">
+                            <label for="economy-subj-checkbox">Экономика</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="chem-subj-checkbox" id="chem-subj-checkbox" class="subj-checkbox" value="chemistry">
+                            <label for="chem-subj-checkbox">Химия</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="bio-subj-checkbox" id="bio-subj-checkbox" class="subj-checkbox" value="biology">
+                            <label for="bio-subj-checkbox">Биология</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="ger-lang-subj-checkbox" id="ger-lang-subj-checkbox" class="subj-checkbox" value="ger-lang">
+                            <label for="ger-lang-subj-checkbox">Немецкий язык</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="hist-subj-checkbox" id="hist-subj-checkbox" class="subj-checkbox" value="history">
+                            <label for="hist-subj-checkbox">История</label>
+                        </div>
+                    </div>
+                    <div id="duration-list-opener", class="filter-option">
+                        <div class="arrow"><span>&#9660</span></div>
+                        <div><span>Продолжительность обучения</span></div>
+                    </div>
+                    <div id="duration-list" class="input-list">
+                        <div>
+                            <input type="checkbox" name="four-checkbox" id="four-checkbox" class="duration-checkbox" value='4'>
+                            <label for="four-checkbox">4 года</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="five-checkbox" id="five-checkbox" class="duration-checkbox" value='5'>
+                            <label for="five-checkbox">5 лет</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="six-checkbox" id="six-checkbox" class="duration-checkbox" value='6'>
+                            <label for="six-checkbox">6 лет</label>
+                        </div>
+                    </div>
+                    <div id="price-list-opener", class="filter-option">
+                        <div class="arrow"><span>&#9660</span></div>
+                        <div><span>Стоимость обучения<br>(рублей в год)</span></div>
+                    </div>
+                    <div id="price-list" class="input-list">
+                        <div>
+                            <input type="checkbox" name="fourtyfive-fifty-price-checkbox" id="fourtyfive-fifty-price-checkbox" class="price-checkbox" value='45000, 49999'>
+                            <label for="fourtyfive-fifty-price-checkbox">45000 — 49999</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="fifty-fiftyfive-price-checkbox" id="fifty-fiftyfive-price-checkbox" class="price-checkbox" value='50000, 54999'>
+                            <label for="fifty-fiftyfive-price-checkbox">50000 — 54999</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="fiftyfive-sixty-price-checkbox" id="fiftyfive-sixty-price-checkbox" class="price-checkbox" value='55000, 59999'>
+                            <label for="fiftyfive-sixty-price-checkbox">55000 — 59999</label>
+                        </div>
+                    </div>
+                    <div>
+                        <button id="apply-filters-button">Применить</button>
+                    </div>
+                    <div>
+                        <button id="cancel-filters-button">Сбросить</button>
+                    </div>
+                </div>
+            </div>
+            <div id="directions-and-search">
+                <div>
+                    <input type="text" id="search-field" placeholder="Введите направление">
+                </div>
+                <div id="direction-content"></div>
+            </div>
+            <div id="teacher-content">
+                <div class="teacher">
+                    <div><img src="https://onlineschool-1.ru/uploads/tanya_al_50d5175e3f.png" class="teacher-img"></div>
+                    <div class="teacher-desc">
+                        <div><strong>Татьяна Александровна</strong></div>
+                        <div><span>Учитель математики</span></div>
+                        <div><span>Стаж работы более 11 лет</span></div>
+                    </div>
+                </div>
+                <div class="teacher">
+                    <div><img src="https://onlineschool-1.ru/uploads/alihan_5b327f149e.png" class="teacher-img"></div>
+                    <div class="teacher-desc">
+                        <div><strong>Алихан Мавладиевич</strong></div>
+                        <div><span>Учитель истории и обществознания</span></div>
+                        <div><span>Стаж работы более 10 лет</span></div>
+                    </div>
+                </div>
+                <div class="teacher">
+                    <div><img src="https://onlineschool-1.ru/uploads/teacher_rodina_2_21627514f5.png" class="teacher-img"></div>
+                    <div class="teacher-desc">
+                        <div><strong>Ирина Николаевна</strong></div>
+                        <div><span>Учитель биологии</span></div>
+                        <div><span>Стаж работы более 14 лет</span></div>
+                    </div>
+                </div>
+                <div class="teacher">
+                    <div><img src="https://onlineschool-1.ru/uploads/vasich_e0a3d10a9f.png" class="teacher-img"></div>
+                    <div class="teacher-desc">
+                        <div><strong>Татьяна Евгеньевна</strong></div>
+                        <div><span>Учитель английского языка</span></div>
+                        <div><span>Стаж работы более 20 лет</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-item">
+            <div id="title-str" class="head-str"><strong>Online-school</strong></div>
+            <div>
+                <img id="logo" src="https://cdn-icons-png.freepik.com/256/3404/3404725.png?ga=GA1.1.381131341.1708775887&">
+            </div>
+        </div>
+        <div class="footer-item">
+            <div class="head-str"><strong>О компании</strong></div>
+            <div><a href="">Поддержка</a></div>
+            <div><a href="">Сведения об<br>образовательной<br>организации</a></div>
+            <div><a href="">Политика<br>конфиденциальности</a></div>
+        </div>
+        <div class="footer-item">
+            <div class="head-str"><strong>Свяжитесь с нами</strong></div>
+            <div><a href="">+7-800-555-35-35</a></div>
+            <div><a href="">support@online-school.ru</a></div>
+            <div><span>Присоединяйтесь к нам в соцсетях</span></div>
+            <div>
+                <a class="img-link" href="">
+                    <img src="https://cdn.icon-icons.com/icons2/2428/PNG/512/vk_black_logo_icon_147058.png">
+                </a>
+                <a class="img-link" href="">
+                    <img src="https://cdn.icon-icons.com/icons2/3186/PNG/512/telegram_icon_194153.png">
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/script.js"></script>
+</body>
+
+</html>
